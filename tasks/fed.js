@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 
     var done = this.async();
 
-    var spawn = grunt.util.spawn({
+    var child = grunt.util.spawn({
         cmd: 'fed',
         args: ['server', this.data.config]
       }, function (error, result, code) {
@@ -22,10 +22,10 @@ module.exports = function(grunt) {
         return done(code);
       });
 
-    console.log('listening at port '.cyan +
-        grunt.file.readJSON(this.data.config).server.port.green);
+    child.stdout.pipe(process.stdout);
+    child.stderr.pipe(process.stderr);
 
-    return spawn;
+    return child;
 
   });
 
