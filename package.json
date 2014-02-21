@@ -1,0 +1,39 @@
+{
+  "name": "grunt-fed",
+  "description": "run fed with grunt.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/crossjs/grunt-fed",
+  "author": {
+    "name": "crossjs",
+    "email": "one@ffully.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/crossjs/grunt-fed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/crossjs/grunt-fed/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/crossjs/grunt-fed/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.2"
+  },
+  "keywords": [
+    "gruntplugin",
+    "fed"
+  ]
+}
