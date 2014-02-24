@@ -4,7 +4,7 @@
 
 ```js
 grunt.initConfig({
-  fedk: {
+  fed: {
     your_task: {
       config: 'config.json'
     }
